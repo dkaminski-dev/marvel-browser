@@ -81,6 +81,7 @@ export const slice = createSlice( {
 export const { appendCharacters, reset, updateSearchText, updateHasMoreData, init } = slice.actions;
 
 export const selectCharacters = ( state: AppState ) => state.characterList.characters;
+export const selectCharacterById = ( state: AppState, id: number ) => state.characterList.characters.find( character => character.id === id );
 export const selectSearchText = ( state: AppState ) => state.characterList.searchText;
 export const selectLoading = ( state: AppState ) => state.characterList.isLoading;
 export const selectHasMoreData = ( state: AppState ) => state.characterList.hasMoreData;
