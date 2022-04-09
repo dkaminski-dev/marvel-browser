@@ -17,7 +17,7 @@ const CharacterList = () =>
     {
         if ( hasMoreData )
         {
-            dispatch( loadNextData( 20 ) );
+            dispatch( loadNextData( 50 ) );
         }
     }, [ dispatch, hasMoreData ] );
 
@@ -26,7 +26,7 @@ const CharacterList = () =>
         if ( isInit === false )
         {
             dispatch( init() )
-            dispatch( loadNextData( 20 ) );
+            dispatch( loadNextData( 50 ) );
         }
     }, [ dispatch, isInit ] );
 

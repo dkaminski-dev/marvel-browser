@@ -29,7 +29,7 @@ const SearchBox = () =>
     const onApplySearch = () =>
     {
         dispatch( reset() )
-        dispatch( loadNextData( 20 ) );
+        dispatch( loadNextData( 50 ) );
     }
 
     return (
